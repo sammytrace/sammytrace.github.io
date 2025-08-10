@@ -50,9 +50,18 @@
 						<div class="inner">
 							<h1>MSc Project: Evaluating the Impact of Graph Construction Methods on the Performance of Graph Neural Networks and Transformers for Fraud Detection in Financial Transactions.</h1>
 							<span class="image main"><img src="images/Fraud_Detection.jpg" alt="" /></span>
-							<p>The increasing sophistication and global scale of financial fraud demand advanced detection methodologies that surpass traditional machine learning models. This article explores the transformative potential of Graph Neural Networks (GNNs) and transformer-based architectures, such as Graphormer, in fraud detection. 
-By systematically evaluating various graph construction techniques—node-centric, edge-centric, stratified heterogeneous, and temporal representations—this research investigates their impact on model performance. The study leverages the IEEE-CIS fraud detection dataset, enriched through feature engineering, to construct graph representations capturing the complex yet relational nature of financial transactions. Traditional GNN models, including Graph Convolutional Networks (GCN), Graph Attention Networks (GAT), and GraphSAGE, are benchmarked against Graphormer to assess scalability, accuracy, and the ability to model intricate fraud patterns. 
-Results highlight the superiority of transformer-based architectures in capturing long-range dependencies and adapting to dynamic fraud patterns, offering a significant advancement in graph-based fraud detection. The findings not only optimize fraud detection frameworks but also establish a foundation for applications in cybersecurity, social network analysis, and recommendation systems.
+							<p>When I began my MSc in Data Science and Analytics, I wanted my final project to tackle a real problem that mattered. Few problems in today’s world are as urgent and costly as financial fraud. Every year, billions are lost to sophisticated scams that traditional detection systems simply can’t catch. These systems often see transactions as isolated events, missing the hidden connections fraudsters exploit.
+That’s where my idea came in: what if we could use Graph Neural Networks (GNNs) and transformer-based AI models to see the “bigger picture.” The web of relationships linking people, devices, accounts, and transactions to spot fraud patterns that others miss?
+I took a real-world fraud dataset from the IEEE-CIS competition and began by building four different “views” of the data as graphs:
+Node-Centric Graphs — transactions as dots, connected if they looked similar.
+Edge-Centric Graphs — transactions as links between people, cards, or devices.
+Heterogeneous Graphs — mixing multiple entity types and relationships.
+Temporal Graphs — capturing how activity changes over time.
+On each of these, I trained four AI models: three classic GNNs (GCN, GAT, GraphSAGE) and a cutting-edge transformer model called Graphormer. My goal was simple: see which combinations of graph type and AI model could most accurately detect fraudulent transactions.
+The results were striking. Edge-Centric Graphs—which focused on direct relationships between entities outperformed every other approach. Paired with Graphormer or GraphSAGE, they achieved near-perfect accuracy (AUC-ROC = 1.000). Temporal graphs, surprisingly, struggled, showing that time alone isn’t enough without relational context.
+This research showed me that in fraud detection, how you represent the data is just as important as the AI model you choose. By mapping the “network” behind transactions and using advanced AI to read it, we can move much closer to catching fraud before it happens.
+For me, the project wasn’t just an academic exercise, it was proof that the right combination of data representation and AI architecture can solve problems that cost the world hundreds of billions every year.
+ic fraud patterns, offering a significant advancement in graph-based fraud detection. The findings not only optimize fraud detection frameworks but also establish a foundation for applications in cybersecurity, social network analysis, and recommendation systems.
 ;</p>
 
 							<p>	This project was executed using Python.
